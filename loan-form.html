@@ -113,7 +113,6 @@
   <h2>Loan Application Form</h2>
   
   <form id="loanForm" action="https://formsubmit.co/salesleadbridge@gmail.com" method="POST" target="_blank">
-    
     <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
     <input type="hidden" name="_captcha" value="false">
 
@@ -171,22 +170,16 @@ const modal = document.getElementById('thankYouModal');
 const closeModalBtn = document.getElementById('closeModal');
 
 form.addEventListener('submit', function(e) {
-  // Show modal
   modal.style.display = 'flex';
-  // Clear form fields
   form.reset();
 });
 
-// Close modal
 closeModalBtn.addEventListener('click', function() {
   modal.style.display = 'none';
 });
 
-// Click outside modal to close
 window.addEventListener('click', function(e) {
-  if(e.target == modal) {
-    modal.style.display = 'none';
-  }
+  if(e.target == modal) { modal.style.display = 'none'; }
 });
 </script>
 
