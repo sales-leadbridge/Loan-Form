@@ -31,7 +31,6 @@
 
   .form-group {
     margin-bottom: 18px;
-    position: relative;
   }
 
   .form-control, select, textarea {
@@ -50,9 +49,6 @@
     outline: none;
   }
 
-  select { background: #fff; }
-  textarea { resize: vertical; }
-
   .btn-submit {
     width: 100%;
     padding: 14px;
@@ -66,7 +62,6 @@
   }
   .btn-submit:hover { background: #0056b3; }
 
-  /* Modal popup */
   .modal {
     display: none;
     position: fixed;
@@ -112,8 +107,10 @@
 <div class="form-container">
   <h2>Loan Application Form</h2>
   
-  <form id="loanForm" action="https://formsubmit.co/salesleadbridge@gmail.com" method="POST" target="_blank">
+  <form id="loanForm" action="https://formsubmit.co/salesleadbridge@gmail.com" method="POST">
+    <!-- FormSubmit settings -->
     <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
 
     <div class="form-group">
       <input type="text" name="name" class="form-control" placeholder="Full Name" required>
